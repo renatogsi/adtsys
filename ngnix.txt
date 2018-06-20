@@ -1,0 +1,417 @@
+
+ngnix centos:
+
+/etc/ngnix
+
+
+ngnix.conf
+
+include /etc/ngnix/vhost.d/*.conf;
+
+mkdir vhost.d
+cd vhost.d
+mv conf.d/default.conf vhost.d
+
+vi default.conf
+
+comentar linha 
+
+include /etc/nginx/default.d/*.conf
+
+location /
+
+root /var/www/html # padrao virtuais
+
+
+mkdir -p /var/www/html
+
+# ngnix -t -  testar configuração
+
+
+Create VHOST
+
+cd /etc/nginx/vhost.d
+
+vi www.myexapmle.local.conf
+
+server {
+	listen 80;
+	root /var/www/html/myexample;
+	index index.html index.htm index.php;
+	server_name www.myexample.local myexample;
+}
+
+Upstream Directive
+
+/etc/nginx/vhost.d
+
+vi mynode.conf
+
+upstrem mynode {
+	server localhost:8888;
+}
+
+server {
+
+	server_name www.mynode.local;
+
+	location / {
+		proxy_pass http://mynode;
+	}
+}
+
+
+Basic load Balance
+
+upstrem mynode {
+	server localhost:8888 weight=1;
+	server localhost:8889 weight=4;
+}
+
+server {
+
+	server_name www.mynode.local;
+
+	location / {
+		proxy_pass http://mynode;
+	}
+}
+
+SSL CERTIFICATE MANAGEMENT
+
+mkdir ssl
+cd ssl
+
+generate key:
+
+openssl genrsa -des3 -out server.key 1024
+
+openssl req -new -key server.key -out -server.crs
+
+cp server.key server.key.org
+
+openssl rsa -in sever.key.org -out server.key
+
+expiration day
+
+openssh x509 0req -days 365 -in server.csr -sigkey server.key -out server.crt
+
+
+server {
+	listen 80;
+	root /var/www/html/myexample;
+	index index.html index.htm index.php;
+	server_name www.myexample.local myexample;
+}
+
+server {
+	listem 443;
+
+	root /var/wwwhtml/myexample;
+	index index.html index.htm index.php;
+
+	server_name www.myexample.local myexample;
+
+	ssl on;
+	ssl_certicate /etc/nginx/ssl/server.crt;
+	ssl_certicate_key /etc/nginx/ssl/server.key;
+
+}
+
+LOCATION DIRECTIVE
+
+
+server {
+	listen 80;
+	
+	index index.html index.htm index.php;
+	server_name www.myexample.local myexample;
+	
+	location / {
+
+		root /var/www/html/myexample;
+	}
+
+	location /images/ {
+		root /var/www/html/images;
+	}
+
+	location /google {
+
+		proxy_pass http://google.com;
+	}
+}
+
+server {
+	listem 443;
+
+	root /var/wwwhtml/myexample;
+	index index.html index.htm index.php;
+
+	server_name www.myexample.local myexample;
+
+	ssl on;
+	ssl_certicate /etc/nginx/ssl/server.crt;
+	ssl_certicate_key /etc/nginx/ssl/server.key;
+
+}
+
+lynx http://www.myexample.com/google
+
+
+Return Directive
+
+
+server {
+	listen 80;
+	
+	index index.html index.htm index.php;
+	server_name www.myexample.local myexample;
+	
+	location /forum {
+		return 301 http://www.google.com;
+	}
+
+	location / {
+
+		root /var/www/html/myexample;
+	}
+
+}
+
+BASIC REWRITES
+
+server {
+	listen 80;
+	
+	index index.html index.htm index.php;
+	server_name www.myexample.local myexample;
+	
+	location /forum {
+		rewrite ^/forum/(.*)$ http://www.myexample.local/forum/$1 permanent;
+	}
+
+	location / {
+
+		root /var/www/html/myexample;
+	}
+
+}
+
+CUSTOM ERROR PAGES
+
+
+server {
+	listen 80;
+	
+	index index.html index.htm index.php;
+	server_name www.myexample.local myexample;
+
+#################################################################
+	access_log /var/log/nginx/myexample.access.http.log;
+	error_log /var/log/nginx/myexample.error.http.log;
+
+	error_page 404 = /404.html;
+	location = /404.html {
+		root /var/www/html/myexample;
+		internal;
+	}
+
+#################################################################	
+	location /forum {
+		rewrite ^/forum/(.*)$ http://www.myexample.local/forum/$1 permanent;
+	}
+
+	location / {
+
+		root /var/www/html/myexample;
+	}
+
+}
+
+
+ Logging Directives
+
+server {
+	listen 80;
+	
+	index index.html index.htm index.php;
+	server_name www.myexample.local myexample;
+
+#################################################################
+	access_log /var/log/nginx/myexample.access.http.log;
+	error_log /var/log/nginx/myexample.error.http.log;
+
+#################################################################	
+	location /forum {
+		rewrite ^/forum/(.*)$ http://www.myexample.local/forum/$1 permanent;
+	}
+
+	location / {
+
+		root /var/www/html/myexample;
+	}
+
+}
+
+Custom Log Levels
+
+
+server {
+	listen 80;
+	
+	index index.html index.htm index.php;
+	server_name www.myexample.local myexample;
+
+#################################################################################
+
+	access_log /var/log/nginx/myexample.access.http.log combined buffer=32k;  ## limite dados arquivo LOG
+	error_log /var/log/nginx/myexample.error.http.log debug;
+
+#################################################################################
+
+	location /forum {
+		rewrite ^/forum/(.*)$ http://www.myexample.local/forum/$1 permanent;
+	}
+
+	location / {
+
+		root /var/www/html/myexample;
+	}
+
+}
+
+Custom Access Log Format
+
+server {
+	listen 80;
+	
+	index index.html index.htm index.php;
+	server_name www.myexample.local myexample;
+
+#################################################################################
+
+	log_format myAccessFormat 'Remote IP: $remote_addr - Time Request: $time_local - Browser: $http_user_agent';
+
+	access_log /var/log/nginx/myexample.access.http.log myAccessFormat buffer=32k;  ## limite dados arquivo LOG
+	error_log /var/log/nginx/myexample.error.http.log debug;
+
+#################################################################################
+
+	location /forum {
+		rewrite ^/forum/(.*)$ http://www.myexample.local/forum/$1 permanent;
+	}
+
+	location / {
+
+		root /var/www/html/myexample;
+	}
+
+}
+
+
+ Blocking IPs
+
+/etc/nginx/nginx.conf
+
+include blockip.conf;
+
+
+blockip.conf
+
+deny < ip address>
+
+------------------------------------------------------------------------
+
+server {
+	listen 80;
+	
+	index index.html index.htm index.php;
+	server_name www.myexample.local myexample;
+
+#################################################################################
+
+	log_format myAccessFormat 'Remote IP: $remote_addr - Time Request: $time_local - Browser: $http_user_agent';
+
+	access_log /var/log/nginx/myexample.access.http.log myAccessFormat buffer=32k;  ## limite dados arquivo LOG
+	error_log /var/log/nginx/myexample.error.http.log debug;
+
+#################################################################################
+
+	location /forum {
+		rewrite ^/forum/(.*)$ http://www.myexample.local/forum/$1 permanent;
+	}
+
+	location / {
+
+		root /var/www/html/myexample;
+
+		deny < ip address >;
+	}
+
+}
+
+
+LEMP Stack: Configuration Optimization
+
+
+Ver numero processadores linux:
+
+cat /proc/cpuinfo
+
+Limite conexões
+
+ulimit -n
+
+
+worker_processes
+worker_connections 
+
+buffer
+
+client_body_buffer_size 10k;
+client_header_buffer_size 1k;
+client_max_body_size 8m;
+large_client_header_buffers 2 1k;
+
+timeout
+
+client_body_timeout 12;  #seconds
+client_header_timeout 12;
+keepalive_timeout 15;
+send_timeout 10;
+
+LEMP Stack: PHP
+
+install php e php-fpm
+
+cd /etc/php-fpm.d
+
+vi www.conf
+
+comente linha listen = 127.0.0.1:9000
+
+listen = /var/run/php-fpm/www.sock
+
+touch /var/run/php-fpm/www.sock
+chown nginx:nginx /var/run/php-fpm/www.sock
+
+chkconfig php-fpm on
+service php-fpm start
+
+
+LEMP Stack: MariaDB/MYSQL
+
+install mariadb,devel, client, server, perl-DBD-Mysql
+
+mysql_secure_installation
+
+mysql -u root -p
+
+
+
+
+
+
+
+
