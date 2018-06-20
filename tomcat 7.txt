@@ -1,0 +1,137 @@
+Installation and Basic Setup
+
+tomcat.apache.org
+java.com
+
+gunzip jdk*.gz
+
+mv jdk* /opt
+sudo alternative --install /usr/bin/java java /opt/jdk*/bin/java 2
+sudo alternative --config java
+
+java --version
+
+sudo alternative --install /usr/bin/jar jar /opt/jdk*/bin/jar 2
+sudo alternative --install /usr/bin/javac javac /opt/jdk*/bin/javac 2
+
+sudo alternative --set jar /opt/jdk*/bin/jar
+sudo alternative --set javac /opt/jdk*/bin/javac
+
+
+export JAVA_HOME=/opt/jdk*/
+export JRE_HOME=/opt/jdk*/jre
+export PATH=$PATH:/opt/jdk*/bin:/opt/jdk*/jre/bin
+
+
+tar -zxvf apache-tomcat*.tar.gz
+
+mv apache-tomcat /opt
+
+
+cd /opt/apache-tomcat*/bin
+
+./startup.sh
+
+
+curl http://localhost:8080
+
+
+
+Web Application Structure
+
+
+cd /opt/apache-tomcat*/webapps
+
+mkdir test
+
+vi index.html
+
+<HTML>
+<BODY>
+<H1> TEST </H1>
+</BODY>
+</HTML>
+
+startup.sh
+
+http://localhost:8080/test
+
+
+
+
+Configure Tomcat as a Service
+
+
+vi /etc/init.d/tomcat
+
+#!/bin/sh
+
+ECHO=/bin/echo
+TEST=/usr/bin/test
+TOMCAT_USER=openkm
+TOMCAT_HOME=/home/openkm/tomcat-7.0.27
+TOMCAT_START_SCRIPT=$TOMCAT_HOME/bin/startup.sh
+TOMCAT_STOP_SCRIPT=$TOMCAT_HOME/bin/shutdown.sh
+ 
+$TEST -x $TOMCAT_START_SCRIPT || exit 0
+$TEST -x $TOMCAT_STOP_SCRIPT || exit 0
+ 
+start() {
+    $ECHO -n "Starting Tomcat"
+    su - $TOMCAT_USER -c "$TOMCAT_START_SCRIPT &"
+    $ECHO "."
+}
+ 
+stop() {
+    $ECHO -n "Stopping Tomcat"
+    su - $TOMCAT_USER -c "$TOMCAT_STOP_SCRIPT 60 -force &"
+    while [ "$(ps -fu $TOMCAT_USER | grep java | grep tomcat | wc -l)" -gt "0" ]; do
+        sleep 5; $ECHO -n "."
+    done
+    $ECHO "."
+}
+ 
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        stop
+        sleep 30
+        start
+        ;;
+    *)
+        $ECHO "Usage: tomcat {start|stop|restart}"
+        exit 1
+esac
+exit 0
+
+
+
+
+
+
+User Accounts and Tomcat Management
+
+
+
+
+
+Understanding Architecture and Configuration
+
+
+
+Deploy Applications on Tomcat
+
+
+
+
+Managing Tomcat Applications
+
+
+
+
+Tuning Tomcat for Performance
