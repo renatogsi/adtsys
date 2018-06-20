@@ -66,6 +66,10 @@ vi /etc/init.d/tomcat
 
 #!/bin/sh
 
+# chkconfig: 2345 95 20 
+# description: this is the startup script for tomcat on system boot
+# processname: tomcat
+
 ECHO=/bin/echo
 TEST=/usr/bin/test
 TOMCAT_USER=openkm
@@ -109,14 +113,23 @@ case "$1" in
 esac
 exit 0
 
+chmod 755 tomcat
 
+update-rc.d tomcat default  # debian
 
+chkconfig --level 2345 tomcat on # centos
 
 
 
 User Accounts and Tomcat Management
 
+tomcat-users.xml
 
+<role rolename="manager-gui" />
+	<user username="user" password="password" roles="manager-gui" />
+
+<role rolename="admin-gui" />
+	<user username="admin" password="password" roles="manager-gui,admin-gui" />
 
 
 
@@ -124,7 +137,11 @@ Understanding Architecture and Configuration
 
 
 
+
+
 Deploy Applications on Tomcat
+
+
 
 
 
@@ -134,4 +151,11 @@ Managing Tomcat Applications
 
 
 
+
+
 Tuning Tomcat for Performance
+
+
+
+
+
