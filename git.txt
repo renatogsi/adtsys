@@ -1,0 +1,1679 @@
+    1  git status
+    3  git status
+    5  git status
+    6  git checkout develop
+    8  git checkout fix/pk-3590-nao-seleciona-redacao
+    9  git pull origin develop
+   10  git status
+   11  git push origin fix/pk-3590-nao-seleciona-redacao develop
+   13  git pull origin develop
+   14  git status
+   15  git commit 
+   16  git push origin fix/pk-3590-nao-seleciona-redacao
+   17  git push origin fix/pk-3590-nao-seleciona-redacao develop
+   22  cd develop/workspaces/frontend/ciee-frontend/git status
+   27  git pull
+   28  git pull fix/pk-3590-nao-seleciona-redacao
+   29  git pull origin fix/pk-3590-nao-seleciona-redacao
+   30  git status
+   31  git commit -am "ajustado para private"
+   32  git push origin fix/pk-3590-nao-seleciona-redacao)
+   33  git push origin fix/pk-3590-nao-seleciona-redacao
+   34  git status
+   35  git checkout develop
+   37  git status
+   39  git checkout develop
+   40  git status
+   50  git pull
+   95  git status
+  110  git status
+  116  git clone git@bitbucket.org:cieedesenv/ciee-architecture.git
+  118  git pull
+  125  git status
+  126  git pull
+  132  git clone git@bitbucket.org:cieedesenv/ciee-infra.git
+  141  git checkout master
+  142  git pull
+  159  git pull
+  176  git status
+  179  git remote add origin git@bitbucket.org:cieedesenv/ciee-service-audit.git
+  181  git remote -v
+  185  git remote add origin git@bitbucket.org:cieedesenv/ciee-service-audit.git
+  187  git clone git@bitbucket.org:cieedesenv/ciee-service-audit.git
+  191  git remote add origin git@bitbucket.org:cieedesenv/ciee-service-audit.git
+  192  git remote add origin 
+  194  git init 
+  195  git remote add origin git@bitbucket.org:cieedesenv/ciee-service-audit.git
+  196  git status
+  197  git add .
+  198  git commit -am "versionamento inicial"
+  199  git push -u origin master
+  201  git status
+  202  git pull
+  203  git checkout develop
+  204  git pull
+  211  git status
+  212  git checkout pom.xml
+  222  git checkout master
+  223  git pull
+  224  git checkout develop
+  225  git status
+  226  git checkout pom.xml
+  227  git checkout src/test/java/br/com/adtsys/audit/test/CieeServiceAuditApplicationTests.java
+  228  git staus
+  229  git status
+  230  git checkout master
+  231  git pull
+  232  git status
+  233  git add .
+  234  git status
+  235  git commit -am 'ajustes no git-ignore'
+  236  git push origin master
+  237  git status
+  238  git pull
+  251  git pull
+  256  git status
+  258  git checkout feature/audit
+  259  git pull origin feature/audit
+  272  git status
+  296  git checkout develop 
+  297  git pull
+  298  git status
+  300  git status
+  305  git status
+  306  git add .
+  307  git status
+  308  git commit -am "adicoes de fluxo padrao + processamento assincrono"
+  309  git status
+  310  git push 
+  311  git status
+  318  git status
+  324  git status
+  325  git add .
+  326  git status
+  327  git commit -am 'ajustes no serializer, criacao do modelo,insercao no banco h2'
+  328  git push 
+  329  git status
+  330  git add .
+  331  git commit -am 'ajustes na serializacao'
+  332  git push
+  333  git status
+  337  git status
+  339  git status
+  340  git checkout -b 'feature/audit-abstracao-do-model'
+  341  git status
+  384  git status
+  386  git branch -D feature/audit-abstracao-do-model
+  387  git status
+  388  git checkout src/main/java/br/com/adtsys/ciee/architecture/generic/model/SimpleBaseModel.java
+  389  git status
+  390  git branch -D feature/audit-abstracao-do-model
+  391  git checkout develop
+  392  git branch -D feature/audit-abstracao-do-model
+  393  git pull
+  396  git status
+  397  git checkout src/main/java/br/com/adtsys/ciee/audit/diff/model/DiffModel.java
+  398  git checkout src/main/java/br/com/adtsys/ciee/audit/diff/service/DiffModelService.java
+  399  git status
+  406  git ps -a
+  416  git fetch
+  417  git checkout develop
+  418  git pull origin develop
+  421  git status
+  426  git pull
+  427  git status
+  428  git pull
+  429  git checkout -b task/unit-chamada-audit
+  433  git status
+  455  git status
+  478  git pull
+  489  git status
+  490  git stash
+  492  git status
+  540  git status
+  541  git add .
+  542  git status
+  543  git commit -am 'adicao das chamadas do audit nas telas de registro de ie'
+  544  git pull origin develop
+  545  git push origin task/unit-chamada-audit
+  549  git fetch
+  550  git checkout feature/audit-configurations
+  577  git status
+  578  git checkout src/main/java/br/com/adtsys/ciee/audit/diff/controller/DiffModelController.java
+  579  git checkout develop
+  591  git status
+  592  git add .
+  593  git commit -am 'ajustes nos testes'
+  594  git push origin task/unit-chamada-audit
+  595  git status
+  596  git add .
+  597  git commit -am'ajustes'
+  598  git push origin task/unit-chamada-audit
+  599  git checkout develop
+  607  git status
+  608  git add .
+  609  git commit -am "ajustes no auditservice"
+  610  git push origin develop
+  611  git pull
+  612  git status
+  613  git checkout src/main/java/br/com/adtsys/ciee/unit/service/audit/AuditService.java
+  614  git status
+  615  git fetch
+  616  git status
+  617  git checkout
+  618  git branches
+  619  git branche
+  620  git branch
+  621  git checkout task/unit-chamada-audit
+  622  git status
+  623  git add .
+  624  git status
+  625  git commit -am 'ajustes no nome da entidade'
+  626  git pull
+  628  git pull origin develop
+  629  git status
+  630  git checkout src/main/resources/bootstrap.yml
+  631  git status
+  633  git status
+  634  git reset HEAD src/main/resources/bootstrap.yml
+  635  git status
+  637  git status
+  638  git rebase --abort
+  639  git stattus
+  640  git status
+  641  git pull origin develop
+  642  git rebase --continue
+  643  git status
+  644  git add .
+  645  git staus
+  646  git status
+  647  git rebase --continue
+  648  git status
+  649  git push origin task/unit-chamada-audit
+  650  git status
+  651  git add .
+  652  git commit -am 'ajustes nome paramentro do objeto diff'
+  653  git push origin task/unit-chamada-audit
+  654  git checkout develop
+  656  git status
+  657  git checkout src/test/java/br/com/adtsys/ciee/unit/cooperationagreement/service/CooperationAgreementServiceTest.java
+  658  git status
+  659  git branch
+  660  git pull
+  661  git checkout task/unit-chamada-audit
+  662  git pull origin develop
+  663  git status
+  676  git status
+  678  git checkout develop
+  679  git pull
+  680  git status
+  681  git checkout .java
+  682  git checkout * .java
+  683  git checkout src/integration-test/java/br/com/adtsys/ciee/unit/steps/RequestSteps.java src/test/java/br/com/adtsys/ciee/unit/campus/service/CampusCoursePeriodServiceTest.java src/test/java/br/com/adtsys/ciee/unit/campus/service/CampusCourseServiceTest.java src/test/java/br/com/adtsys/ciee/unit/cooperationagreement/service/CooperationAgreementServiceTest.java src/test/java/br/com/adtsys/ciee/unit/educationinstitution/service/EIPreRegistrationAnalysisServiceTest.java src/main/java/br/com/adtsys/ciee/unit/client/audit/AuditServiceClientImpl.java
+  684  git statu
+  685  git status
+  686  git checkout src/integration-test/java/br/com/adtsys/ciee/unit/steps/RequestSteps.java 
+  687  git status
+  688  git checkout src/test/java/br/com/adtsys/ciee/unit/campus/service/CampusCoursePeriodServiceTest.java src/test/java/br/com/adtsys/ciee/unit/campus/service/CampusCourseServiceTest.java src/test/java/br/com/adtsys/ciee/unit/cooperationagreement/service/CooperationAgreementServiceTest.java src/test/java/br/com/adtsys/ciee/unit/educationinstitution/service/EIPreRegistrationAnalysisServiceTest.java 
+  689  git status
+  690  git checkout src/main/java/br/com/adtsys/ciee/unit/client/audit/AuditServiceClientImpl.java 
+  691  git status
+  692  git pull
+  703  git pull
+  708  git pull
+  709  git status
+  711  git status
+  719  git status
+  727  git checkout -b task/chamada-audit-company
+  730  git status
+  738  git status
+  739  git pull origin develop
+  741  git status
+  745  git status
+  755  git pull
+  762  git status
+  775  git status
+  776  git checkout src/main/java/br/com/adtsys/ciee/company/exception/JwtParseException.java
+  777  git status
+  778  git checkout src/main/java/br/com/adtsys/ciee/company/preregistration/service/PreRegistrationService.java
+  779  git status
+  780  git checkout pom.xml
+  781  git status
+  782  git pull origin develop
+  788  git status
+  790  git pull
+  792  git status
+  796  git pull
+  797  git status
+  798  git checkout src/main/java/br/com/adtsys/ciee/unit/zipcode/service/ZipcodeRetrieveService.java
+  799  git status
+  800  git pull
+  805  git pull
+  807  git status
+  813  git clone git@bitbucket.org:cieedesenv/ciee-utils.git
+  827  git pull
+  850  git status
+  851  git checkout src/main/java/br/com/adtsys/ciee/unit/educationinstitution/service/EIDomainValidatorService.java
+  852  git status
+  854  git status
+  855  git commit -am "ajuste no fetch dos telefones da education institution"
+  856  git push
+  857  git pull
+  858  git push
+  859  git status
+  860  git checkout -b feature/ajuste-audit-education-institution-phone
+  861  git status
+  862  git add .
+  863  git commit -am "ajuste dos telefones da ie"
+  864  git push origin feature/ajuste-audit-education-institution-phone
+  865  git checkout develop
+  866  git fetch
+  867  git pull
+  877  git pull
+  886  git checkout develop
+  887  git branch
+  888  git branch -D task/chamada-audit-company
+  890  git status
+  891  git checkout .
+  892  git status
+  900  git branch -b task/pk-2397-classificacao-concessao
+  901  git checkout -b task/pk-2397-classificacao-concessao/
+  902  git checkout -b task/pk-2397-classificacao-concessao
+  903  git status
+  906  git status
+  907  git branch
+  908  git pull
+  910  git status
+  911  git checkout develop
+  912  git branch
+  913  git branch -D task/pk-2397-classificacao-concessao
+  914  git fetch
+  915  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+  916  git checkout -b task/pk-3251-perfis-usuarios
+  919  git status
+  920  git checkout src/main/resources/db/migration/oracle/shared/V4__base_inserts.sql
+  921  git status
+  923  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+  924  git status
+  925  git branch
+  926  git branch -D task/pk-3251-perfis-usuarios
+  927  git status
+  928  git fetch
+  929  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+  930  git checkout -b task/pk-3251-perfis-classificaca-da-concessao
+  931  git sttus
+  932  git status
+  934  git status
+  935  git add .
+  936  git status
+  940  git status
+  941  git commit -am "criacao do migration para perfis da classificacao da concessao"
+  942  git status
+  943  git commit -am "ajuste nome do arquivo"
+  944  git status
+  947  git status
+  949  git branch
+  950  git push origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+  951  git status
+  952  git push origin task/pk-3251-perfis-classificaca-da-concessao
+  953  git status
+  954  git checkout src/main/java/br/com/adtsys/ciee/company/concessionclassification/
+  955  git status
+  956  git checkout -b task/pk-3246-modelo-tabela-classificacao
+  957  git status
+  960  git status
+  961  git add .
+  962  git status
+  963  git commit -am "criacao do modelo da tabela de classificacao de concessao"
+  964  git status
+  965  git push origin task/pk-3246-modelo-tabela-classificacao
+  966  git branch
+  968  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+  970  git status
+  971  git checkout -b task/3247-controller-service-repository-classificacao-concessao
+  972  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+  973  git branch
+  974  git branch -D task/3247-controller-service-repository-classificacao-concessao
+  975  git checkout -b task/pk-3247-controller-service-repository-classificacao-concessao
+  976  git status
+  977  git add .
+  978  git status
+  979  git commit -am "adicao do controller, service e repository,e dto para filtro"
+  980  git status
+  981  git push origin task/pk-3247-controller-service-repository-classificacao-concessao
+  982  git branch
+  983  git status
+  984  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+  986  git status
+  987  git checkout -b task/pk-3248-api-endpoints
+  988  git status
+ 1002  git status
+ 1003  git add .
+ 1004  git status
+ 1005  git commit -am "criacao dos endpoints para todas a operacoes da api"
+ 1006  git push origin task/pk-3248-api-endpoints
+ 1007  git branch
+ 1013  git status
+ 1022  git status
+ 1023  git commit -am "ajustes nos perfis e chaves da classificacao da concessao"
+ 1024  git push origin task/pk-3251-perfis-classificaca-da-concessao
+ 1025  git status
+ 1027  git status
+ 1028  git commit -am "ajustes nas permissoes do endpoint"
+ 1029  git push origin task/pk-3248-api-endpoints
+ 1033  git status
+ 1035  git status
+ 1037  git status
+ 1038  git add .
+ 1039  git status
+ 1040  git commit -am "criacao da chamada ao legacy"
+ 1041  git push origin task/pk-3248-api-endpoints
+ 1043  git status
+ 1048  git status
+ 1049  git add .
+ 1050  git commit -am "ajustes no script de usuario admin contratos"
+ 1051  git push origin task/pk-3251-perfis-classificaca-da-concessao
+ 1052  git status
+ 1054  git status
+ 1061  git status
+ 1062  git add .
+ 1063  git status
+ 1064  git commit -am "adicao dos testes de integracao - cucumber"
+ 1065  git push origin task/pk-3248-api-endpoints
+ 1066  git status
+ 1068  git status
+ 1069  git add .
+ 1070  git commit -am "ajuste dos testes de integracao - cucumber"
+ 1071  git push origin task/pk-3248-api-endpoints
+ 1072  git status
+ 1074  git status
+ 1076  git status
+ 1077  git add .
+ 1078  git commit -am "ajustes na comunicação com o legacy"
+ 1079  git status
+ 1080  git push origin task/pk-3248-api-endpoints
+ 1081  git status
+ 1087  git status
+ 1088  git branch
+ 1094  git status
+ 1096  git status
+ 1097  git branch
+ 1098  git push origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1099  git pull origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1100  git status
+ 1102  git status
+ 1103  git commit -am "ajustado conflitos"
+ 1104  git branch
+ 1105  git push origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1106  git rebase --continue
+ 1107  git add
+ 1108  git rebase --skip
+ 1109  git status
+ 1110  git rebase --continue
+ 1111  git add .
+ 1112  git status
+ 1113  git rebase --continue
+ 1114  git status
+ 1116  git status
+ 1117  git rebase --continue
+ 1118  git rebase --skip
+ 1119  git status
+ 1120  git branch
+ 1121  git push origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1122  git pull origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1123  git status
+ 1124  git push origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1125  git pull origin task/pk-3248-api-endpoints
+ 1126  git rebase --continue
+ 1127  git add .
+ 1128  git status
+ 1129  git rebase --continue
+ 1130  git status
+ 1131  git push origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1132  git status
+ 1134  git status
+ 1135  git push origin task/pk-3248-api-endpoints
+ 1136  git status
+ 1137  git pull origin task/pk-3248-api-endpoints
+ 1138  git pull origin  story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1139  git rebase --continue
+ 1140  git add .
+ 1141  git status
+ 1142  git rebase --continue
+ 1143  git status
+ 1144  git rebase --continue
+ 1145  git add .
+ 1146  git status
+ 1147  git rebase --continue
+ 1148  git rebase --skip
+ 1149  git status
+ 1150  git rebase --continue
+ 1151  git status
+ 1152  git add .
+ 1153  git rebase --continue
+ 1154  git status
+ 1155  git rebase --continue
+ 1156  git rebase --skip
+ 1157  git status
+ 1159  git status
+ 1160  git branch
+ 1161  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1162  git pull
+ 1163  git checkout -b task/pk-3247-alterar-envio-legacy
+ 1164  git status
+ 1165  git mvn verify -U
+ 1167  git status
+ 1168  git add .
+ 1169  git status
+ 1170  git commit -am "ajustes no envio ao legacy"
+ 1171  git status
+ 1172  git push origin task/pk-3247-alterar-envio-legacy
+ 1174  git status
+ 1175  git branch
+ 1176  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1177  git pull origin develop
+ 1178  git checkout develop
+ 1179  git rebase --abort
+ 1180  git checkout develop
+ 1181  git pull
+ 1182  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1183  git rebase story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao develop 
+ 1184  git status
+ 1186  git status
+ 1187  git rebase --continue
+ 1188  git add .
+ 1189  git status
+ 1190  git rebase --continue
+ 1191  git status
+ 1192  git push origin story/pk-2395-gerenciar-indices
+ 1193  git push origin story/pk-2395-gerenciar-indices -f
+ 1194  git commit -am "ajustes de conflitos da story/pk-2397 para develop"
+ 1195  git pull
+ 1196  git rebase --abort
+ 1197  git pull
+ 1198  git status
+ 1199  git add .
+ 1200  git commit -am "ajustes de conflitos da story/pk-2397 para a develop"
+ 1201  git status
+ 1202  git rebase --continue
+ 1203  git rebase --skip
+ 1204  git rebase --abort
+ 1205  git pull origin develop
+ 1206  git rebase --abort
+ 1207  git checkout .
+ 1208  git status
+ 1209  git reset --haard HEAD~1
+ 1210  git reset --hard HEAD~1
+ 1211  git pull origin develop
+ 1212  git status
+ 1213  git rebase --abort
+ 1214  git branch
+ 1215  git status
+ 1216  git reset HEAD~1
+ 1217  git status
+ 1218  git revert -hard HEAD~1
+ 1219  git revert --hard HEAD~1
+ 1220  git status
+ 1222  git reset --hard 0ec376bd45265feb5b33c1b160219c63093d9d6c
+ 1223  git status
+ 1225  git clone git@bitbucket.org:cieedesenv/ciee-service-company.git
+ 1227  git status
+ 1229  git fetch
+ 1230  git branch -a
+ 1231  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1232  git pull origin develop
+ 1233  git rebase --abort
+ 1234  git pull origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1235  git rebase story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao develop
+ 1236  git status
+ 1237  git add .
+ 1238  git status
+ 1239  git rebase --continue
+ 1240  git status
+ 1241  git commit -am 'Ajuste story para develop'
+ 1242  git checkout -
+ 1243  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1244  git status
+ 1245  git checkout -
+ 1246  git rebase --abort
+ 1247  git status
+ 1248  git pull origin develop
+ 1249  git rebase --abort
+ 1250  git status
+ 1252  git clone git@bitbucket.org:cieedesenv/ciee-service-company.git
+ 1253  git fetch
+ 1254  git branch
+ 1255  git branch -a
+ 1257  git fetch
+ 1258  git branch -a
+ 1259  git checkout pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1260  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1261  git rebase develop story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1262  git status
+ 1263  git add .
+ 1264  git rebase --continue
+ 1265  git status
+ 1266  git add .
+ 1267  git rebase --continue
+ 1268  git status
+ 1269  git commit -am 'Ajuste story para develop'
+ 1270  git push story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1271  git push origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1272  git push origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao -f
+ 1274  git status
+ 1275  git branch
+ 1276  git push origin task/pk-3251-perfis-classificaca-da-concessao
+ 1277  git status
+ 1279  git pull origin task/pk-3251-perfis-classificaca-da-concessao
+ 1280  git status
+ 1281  git branch
+ 1282  git pull origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1283  git rebase --abort
+ 1284  git branch
+ 1285  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1286  git pull origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1287  git status
+ 1288  git checkout -b task/pk-3246-modelo-migration
+ 1289  git status
+ 1290  git add .
+ 1291  git status
+ 1292  git commit -am "ajustes migration - conflitos"
+ 1293  git status
+ 1294  git push origin task/pk-3246-modelo-migration 
+ 1295  git status
+ 1296  git branch
+ 1297  git status
+ 1298  git commit -am "ajuste nome do arquivo"
+ 1299  git push origin task/pk-3246-modelo-migration
+ 1300  git status
+ 1301  git commit -am "ajustes no arquivo"
+ 1302  git status
+ 1303  git push origin task/pk-3246-modelo-migration
+ 1304  git status
+ 1305  git branch
+ 1306  git checkout story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1307  git status
+ 1308  git pull
+ 1309  git push origin story/pk-2397-gerenciar-tabela-de-classificacao-da-concessao
+ 1316  git status
+ 1325  git branch
+ 1326  git checkout develop
+ 1328  git status
+ 1331  git branch
+ 1332  git checkout develop
+ 1349  git fetch
+ 1351  git branch
+ 1352  git checkout git status
+ 1353  git fetch
+ 1354  git checkout story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1355  git status
+ 1356  git checkout -b task/permissoes-ci-aprendiz
+ 1357  git status
+ 1358  git add .
+ 1359  git status
+ 1363  git status
+ 1364  git commit -am "insercao dos registros para permissao de ci aprendiz"
+ 1365  git status
+ 1366  git push origin task/permissoes-ci-aprendiz
+ 1368  git branch
+ 1369  git fetch && git checkout story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1370  git status
+ 1371  git checkout -b task/ci-aprendiz
+ 1372  git status
+ 1373  git add .
+ 1377  git status
+ 1378  git commit -am "adicao de registros tabela tipo atuacao / adicao relacionamento tabela tipos atuacao aprendiz"
+ 1379  git status
+ 1385  git status
+ 1387  git status
+ 1393  git status
+ 1394  git branch
+ 1395  git checkout story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1396  git status
+ 1397  git checkout task/ci-aprendiz
+ 1398  git status
+ 1399  git log
+ 1400  git status
+ 1401  git checkout src/main/java/br/com/adtsys/ciee/company/config/WebSecurityPathsConfigurationImpl.java
+ 1402  git status
+ 1403  git checkout story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1405  git status
+ 1406  git branch
+ 1407  git branch -D task/ci-aprendiz
+ 1408  git pull origin develop
+ 1416  git status
+ 1417  git log
+ 1418  git pull
+ 1419  git status
+ 1427  git status
+ 1428  git add .
+ 1429  git status
+ 1430  git commit -am "versao inicial gerenciamento ci aprendiz"
+ 1431  git status
+ 1432  git commit -am "alteracoes nos filtros"
+ 1433  git status
+ 1437  git status
+ 1438  git pull origin develop
+ 1439  git fetch
+ 1440  git pull origin develop
+ 1442  git status
+ 1443  git checkout src/integration-test/java/br/com/adtsys/ciee/company/config/IntegrationTests.java
+ 1444  git status
+ 1446  git status
+ 1447  git checkout src/integration-test/java/br/com/adtsys/ciee/company/steps/DatabaseSteps.java
+ 1448  git status
+ 1450  git status
+ 1452  git status
+ 1453  git checkout src/integration-test/resources/features/contracting_method_get_api.feature
+ 1454  git status
+ 1457  git status
+ 1458  git checkout src/integration-test/java/br/com/adtsys/ciee/company/steps/ResponseSteps.java
+ 1459  git status
+ 1461  git status
+ 1463  git status
+ 1464  git add .
+ 1465  git status
+ 1466  git commit -am "testes cucumber do aprendiz"
+ 1467  git status
+ 1468  git fetch
+ 1469  git pull origin develop
+ 1470  git status
+ 1472  git status
+ 1473  git branch
+ 1474  git checkout story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1475  git fetch
+ 1476  git pull origin story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1477  git pull origin develop
+ 1478  git push origin story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1479  git pull origin develop
+ 1480  git fetch
+ 1481  git pull origin develop
+ 1482  git pull origin story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1483  git fetch
+ 1484  git pull origin develop
+ 1485  git pull origin story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1486  git status
+ 1487  git push origin story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1488  git status
+ 1489  git checkout develop
+ 1490  git fetch
+ 1491  git pull origin develop
+ 1492  git status
+ 1494  git sttaus
+ 1495  git staus
+ 1496  git status
+ 1499  git status
+ 1504  git status
+ 1511  git status
+ 1512  git add .
+ 1513  git commit -am "ajustes para impedir criacao quando nao existir ciee"
+ 1514  git status
+ 1517  git status
+ 1519  git status
+ 1520  git pull origin develop
+ 1522  git push origin story/pk-2382-gerenciar-tabela-ci-aprendiz
+ 1523  git status
+ 1524  git checkout develop
+ 1525  git fetch
+ 1526  git pull origin develop
+ 1527  git status
+ 1528  git pull
+ 1532  git status
+ 1533  git pull origin develop
+ 1534  git checkout -b fix/pk-2382-ajustes-testes-aprendiz
+ 1535  git status
+ 1537  git status
+ 1538  git commit -am "ajustes nos testes do ci aprendiz"
+ 1539  git pull origin develop
+ 1540  git push origin fix/pk-2382-ajustes-testes-aprendiz
+ 1541  git checkout develop
+ 1542  git status
+ 1543  git pull origin develop
+ 1546  git status
+ 1553  git pull origin develop
+ 1554  git status
+ 1555  git checkout src/integration-test/resources/bootstrap.yml
+ 1556  git staus
+ 1557  git status
+ 1558  git pull origin develop
+ 1563  git status
+ 1564  git pull origin develop
+ 1567  git status
+ 1572  git pull origin develop
+ 1573  git staus
+ 1574  git status
+ 1575  git checkout src/main/java/br/com/adtsys/ciee/company/contribution/controller/ApprenticeshipContributionController.java
+ 1576  git status
+ 1577  git pull origin develop
+ 1583  git status
+ 1585  git status
+ 1586  git stash
+ 1587  git pull origin develop
+ 1588  git checkout -b fix/pk2383-ajustes-mensagens-erro
+ 1589  git stash pop
+ 1590  git status
+ 1592  git status
+ 1594  git status
+ 1595  git pull origin develop
+ 1596  git status
+ 1598  git status
+ 1601  git status
+ 1602  git commit -am "alteracoes - correcoes- aprendiz"
+ 1603  git pull origin develop
+ 1604  git fetch
+ 1605  git pull origin develop
+ 1606  git status
+ 1607  git add .
+ 1608  git status
+ 1609  git commit -am "alteracoes de constraint"
+ 1610  git status
+ 1611  git pull origin develop
+ 1612  git push origin fix/pk2383-ajustes-mensagens-erro
+ 1614  git checkout develop 
+ 1615  git status
+ 1616  git pull origin develop
+ 1617  git fetch
+ 1618  git status
+ 1620  git status
+ 1621  git pull origin develop
+ 1623  git status
+ 1624  git checkout -b fix/develop
+ 1625  git commit -am 'Correção de testes'
+ 1626  git push origin fix/develop
+ 1636  git checkout develop
+ 1637  git status
+ 1638  git checkout src/main/java/br/com/adtsys/ciee/company/contribution/service/ApprenticeshipContributionService.java
+ 1639  git status
+ 1641  git status
+ 1643  git fetch
+ 1644  git status
+ 1664  git fetch
+ 1667  git fetch
+ 1669  git fetch
+ 1670  git status
+ 1671  git fetch && git checkout story/pk-3015-recuperar-ci-aprendiz
+ 1672  git checkout -b task/pk3951-api-retorno-id-ciee
+ 1673  git status
+ 1684  git status
+ 1719  git status
+ 1720  git checkout src/main/resources/db/migration/h2/qa/V4.1__base_inserts.sql
+ 1721  git checkout src/main/resources/db/migration/h2/qa/V4.2__create_function_to_strip_accents.sql
+ 1722  git status
+ 1728  git status
+ 1730  git fetch
+ 1732  git status
+ 1733  git checkout builds/oracle/docker-compose.yml
+ 1734  git fetch
+ 1738  git status
+ 1748  git status
+ 1750  git status
+ 1751  git add .
+ 1752  git commit -am "versionamento inicial"
+ 1753  git status
+ 1754  git branch
+ 1755  git push origin task/pk3951-api-retorno-id-ciee
+ 1756  git checkout story/pk-3015-recuperar-ci-aprendiz
+ 1757  git fetch
+ 1758  git pull origin develop
+ 1761  git push origin story/pk-3015-recuperar-ci-aprendiz
+ 1762  git status
+ 1764  git fetch
+ 1766  git pull origin develop
+ 1767  git status
+ 1769  git push origin story/pk-3015-recuperar-ci-aprendiz
+ 1770  git checkout develop
+ 1771  git fetch
+ 1772  git pull origin develop
+ 1776  git fetch
+ 1785  git fetch
+ 1787  git fetch && git checkout story/pk-3015-recuperar-ci-padro-aprendiz
+ 1788  git status
+ 1789  git checkout -b task/pk-3954-api-listagem
+ 1791  git status
+ 1793  git status
+ 1808  git fetch
+ 1811  git fetch
+ 1828  git status
+ 1830  git status
+ 1831  git checkout src/main/java/br/com/adtsys/ciee/unit/security/config/WebSecurityConfiguration.java
+ 1833  git status
+ 1834  git checkout src/main/java/br/com/adtsys/ciee/unit/servicepoint/cieeunit/controller/CieeUnitController.java
+ 1835  git status
+ 1836  git checkout src/integration-test/java/br/com/adtsys/ciee/company/unit/client/UnitServiceClientImpl.java
+ 1838  git status
+ 1840  git status
+ 1842  git checkout src/integration-test/java/br/com/adtsys/ciee/company/unit/client/UnitServiceClientImpl.java
+ 1845  git status
+ 1849  git status
+ 1850  git checkout src/main/java/br/com/adtsys/ciee/unit/servicepoint/cieeunit/controller/CieeUnitController.java
+ 1851  git status
+ 1856  git status
+ 1863  git status
+ 1864  git checkout src/main/java/br/com/adtsys/ciee/unit/servicepoint/cieeunit/data/repository/CieeUnitRepository.java
+ 1867  git status
+ 1869  git branch
+ 1870  git push origin task/pk-3954-api-listagem
+ 1871  git status
+ 1872  git add .
+ 1873  git commit -am "versionamento inicial"
+ 1874  git status
+ 1875  git push origin task/pk-3954-api-listagem
+ 1876  git fetch
+ 1879  git branch
+ 1880  git checkout story/pk-3015-recuperar-ci-padro-aprendiz
+ 1882  git checkout -b task/pk-3956-testes-cucumber
+ 1883  git status
+ 1884  git add .
+ 1885  git commit -am "testes cucumber"
+ 1886  git status
+ 1887  git push origin task/pk-3956-testes-cucumber
+ 1889  git branch
+ 1890  git checkout story/pk-3015-recuperar-ci-padro-aprendiz
+ 1891  git fetch
+ 1893  git status
+ 1895  git status
+ 1898  git checkout develop
+ 1900  git fetch
+ 1906  git fetch
+ 1908  git checkout story/pk-2452-configuracao-de-contratos
+ 1911  git status
+ 1912  git fetch
+ 1913  git branch
+ 1914  git checkout story/pk-2452-configuracao-de-contratos
+ 1916  git checkout develop
+ 1917  git branch
+ 1918  git branch -D story/pk-2452-configuracao-de-contratos
+ 1919  git status
+ 1920  git branch
+ 1921  git fetch
+ 1922  git branch
+ 1923  git checkout story/pk-2452-configuracao-de-contratos
+ 1924  git pull origin story/pk-2452-configuracao-de-contratos
+ 1926  git status
+ 1930  git status
+ 1938  git status
+ 1939  git add .
+ 1940  git commit -am "criacao das permissoes, referentes a configuracao de contrato"
+ 1941  git status
+ 1942  git checkout develop
+ 1945  git branch
+ 1947  git checkout story/pk-2452-configuracao-de-contratos
+ 1948  git pull rebase develop
+ 1949  git pull origin develop
+ 1950  git push origin story/pk-2452-configuracao-de-contratos
+ 1951  git checkout develop
+ 1955  git status
+ 1956  git pull origin story/pk-2452-configuracao-de-contratos
+ 1958  git status
+ 1959  git checkout src/main/java/br/com/adtsys/ciee/company/contract/settings/dto/DTo.java src/main/java/br/com/adtsys/ciee/company/contract/settings/service/Servico.java 
+ 1960  git status
+ 1961  git pull origin story/pk-2452-configuracao-de-contratos
+ 1965  git checkout -b task/pk-2452-bloco-servico
+ 1966  git status
+ 1967  git add .
+ 1968  git commit -am "ajustes na arquitetura"
+ 1969  git push origin task/pk-2452-bloco-servico
+ 1970  git staus
+ 1972  git checkout -
+ 1974  git branch
+ 1975  git checkout task/pk-2452-bloco-servico
+ 1976  git rebase story/pk-2452-configuracao-de-contratos
+ 1977  git status
+ 1979  git status
+ 1980  git add .
+ 1981  git commit -am "versionamento inicial"
+ 1982  git status
+ 1983  git push origin task/pk-2452-bloco-servico
+ 1984  git checkout -
+ 1985  git status
+ 1988  git checkout -b task/pk-2452-bloco-aprendiz
+ 1989  git status
+ 1990  git add .
+ 1991  git commit -am "versionamento inicial"
+ 1992  git push origin task/pk-2452-bloco-aprendiz 
+ 1993  git checkout -
+ 1996  git status
+ 1999  git fetch && git checkout story/pk-2452-config-contratos
+ 2000  git status
+ 2001  git add .
+ 2002  git commit -am "adicao de permissao entre microservicos"
+ 2003  git push origin story/pk-2452-config-contratos
+ 2005  git checkout -
+ 2007  git fetch
+ 2013  git status
+ 2014  git checkout -b task/pk-2452-bloco-administracao-contrato-ajustes
+ 2015  git status
+ 2016  git add .
+ 2017  git commit -am "ajustes e melhorias"
+ 2018  git push origin story/pk-2452-configuracao-de-contratos
+ 2019  git push origin task/pk-2452-bloco-administracao-contrato-ajustes
+ 2020  git checkout -
+ 2023  git status
+ 2054  git status
+ 2073  git staths
+ 2074  git status
+ 2075  git stash
+ 2077  git stash pop
+ 2084  git status
+ 2085  git stash
+ 2087  git stash pop
+ 2088  git status
+ 2090  git status
+ 2091  git stash
+ 2093  git stash pop
+ 2095  git status
+ 2096  git stash
+ 2098  git stash pop
+ 2100  git stash
+ 2102  git stash pop
+ 2104  git status
+ 2105  git checkout -b fix/pk-2452-ajustes-diversos
+ 2106  git status
+ 2107  git add .
+ 2108  git commit -am "ajustes diversos"
+ 2109  git push origin fix/pk-2452-ajustes-diversos
+ 2110  git checkout -
+ 2116  git status
+ 2117  git checkout -b fix/pk-2452-ajustes-validacoes
+ 2118  git status
+ 2119  git add .
+ 2120  git commit -am "ajustes validacoes"
+ 2121  git push origin fix/pk-2452-ajustes-validacoes
+ 2122  git checkout -
+ 2124  git status
+ 2125  git checkout -b fix/pk-2452-ajuste-bloco-estagio
+ 2126  git status
+ 2127  git add .
+ 2128  git commit -am "ajustes no bloco estagio"
+ 2129  git push origin fix/pk-2452-ajuste-bloco-estagio
+ 2130  git checkout -
+ 2135  git status
+ 2136  git checkout src/main/java/br/com/adtsys/ciee/company/contract/settings/service/ContractSettingsService.java
+ 2137  git status
+ 2138  git diff src/main/java/br/com/adtsys/ciee/company/contract/settings/service/ContractSettingsBlockInternshipService.java
+ 2139  git diff src/main/java/br/com/adtsys/ciee/company/contract/settings/service/ContractSettingsBlockValidityService.java
+ 2140  git checkout -b fix/pk-2452-correcao-retorno-tipo-de-servico
+ 2141  git commit -am '[PK-2452] Correção tipo de programa'
+ 2142  git push origin fix/pk-2452-correcao-retorno-tipo-de-servico
+ 2143  git checkout -
+ 2144  git checkout-
+ 2152  git checkout develop
+ 2165  git fetch
+ 2173  git checkout -b fix/pk-4079-tooltips-precad-est
+ 2175  git checkout-
+ 2176  git checkout -
+ 2178  git branch
+ 2179  git branch -D fix/pk-4079-tooltips-precad-est
+ 2180  git branch
+ 2189  git fetch
+ 2192  git status
+ 2194  git fetch
+ 2201  git fetch && git pull origin develop
+ 2204  git status
+ 2210  git status
+ 2211  git checkout src/main/resources/application.yml
+ 2220  git status
+ 2222  git status
+ 2223  git stash
+ 2225  git branch -b fix/pk-4057-ajustar-atributo-cod-curso
+ 2226  git checkout -b fix/pk-4057-ajustar-atributo-cod-curso
+ 2227  git stash pop
+ 2228  git status
+ 2230  git status
+ 2232  git status
+ 2233  git checkout
+ 2234  git status
+ 2235  git checkout *.java
+ 2236  git checkout src/main/java/br/com/adtsys/ciee/legacy/LegacyApplication.java src/main/java/br/com/adtsys/ciee/legacy/blockingreason/service/BlockingReasonService.java src/main/java/br/com/adtsys/ciee/legacy/course/service/CourseService.javasrc/main/java/br/com/adtsys/ciee/legacy/course/service/CourseService.java src/main/java/br/com/adtsys/ciee/legacy/lookup/LegacyLookupService.java src/main/java/br/com/adtsys/ciee/legacy/model/Course.java 
+ 2237  git status
+ 2238  git checkout src/main/java/br/com/adtsys/ciee/legacy/LegacyApplication.java 
+ 2239  git checkout src/main/java/br/com/adtsys/ciee/legacy/blockingreason/service/BlockingReasonService.java
+ 2240  git checkout src/main/java/br/com/adtsys/ciee/legacy/course/service/CourseService.java
+ 2241  git checkout src/main/java/br/com/adtsys/ciee/legacy/lookup/LegacyLookupService.java
+ 2242  git checkout src/main/java/br/com/adtsys/ciee/legacy/model/Course.java
+ 2244  git status
+ 2246  git checkout -b fix/pk-4057-ajustar-atributo-cod-curso
+ 2247  git status
+ 2258  git status
+ 2274  git status
+ 2279  git status
+ 2280  git checkout dev/ciee-service-core-dev.yml
+ 2306  git status
+ 2307  git checkout src/main/java/br/com/adtsys/ciee/legacy/course/service/CourseService.java
+ 2308  git checkout src/main/java/br/com/adtsys/ciee/legacy/model/Course.java
+ 2309  git status
+ 2311  git checkout develop 
+ 2314  git status
+ 2319  git status
+ 2320  git add .
+ 2321  git status
+ 2323  git status
+ 2330  git status
+ 2331  git checkout src/integration-test/resources/features/course_api.feature
+ 2333  git status
+ 2334  git add .
+ 2335  git status
+ 2336  git commit -am "ajustes do codigo curso"
+ 2337  git checkout -
+ 2339  git checkout fix/pk-4057-ajustar-atributo-cod-curso
+ 2340  git rebase develop fix/pk-4057-ajustar-atributo-cod-curso
+ 2341  git push origin fix/pk-4057-ajustar-atributo-cod-curso
+ 2342  git checkout -
+ 2343  git fetch && git pull
+ 2346  git status
+ 2350  git status
+ 2374  git status
+ 2376  git status
+ 2377  git stash
+ 2379  git checkout -b task/fila-legado
+ 2380  git stash pop
+ 2381  git checkout -
+ 2382  git branch
+ 2383  git checkout task/fila-legado
+ 2384  git status
+ 2385  git add .
+ 2386  git commit -am "adicao inicial"
+ 2387  git status
+ 2388  git checkout -
+ 2389  git status
+ 2399  git branch
+ 2400  git checkout task/fila-legado
+ 2411  git status
+ 2412  git checkout src/main/resources/db/migration/h2/qa/V2.1__base_inserts.sql
+ 2413  git checkout src/main/resources/db/migration/oracle/shared/V2__base_inserts.sql
+ 2432  git status
+ 2435  git fetch && git pull
+ 2437  git checkout story/pk-2723-cadastrar-multi-empresas
+ 2439  git pull origin story/pk-2723-cadastrar-multi-empresas
+ 2445  git pull origin story/pk-2723-cadastrar-multi-empresas
+ 2447  git pull origin story/pk-2723-cadastrar-multi-empresas
+ 2448  git status
+ 2449  git checkout src/main/java/br/com/adtsys/ciee/company/contract/model/CompanyContractInfo.java
+ 2451  git pull origin story/pk-2723-cadastrar-multi-empresas
+ 2452  git checkout -b task/pk-4189-cadastro-multi-empresas
+ 2454  git status
+ 2462  git pull origin story/pk-2723-cadastrar-multi-empresas
+ 2463  git status
+ 2464  git stash
+ 2465  git pull origin story/pk-2723-cadastrar-multi-empresas
+ 2466  git stash pop
+ 2471  git stash
+ 2472  git pull origin story/pk-2723-cadastrar-multi-empresas
+ 2473  git stash pop
+ 2479  git status
+ 2480  git add .
+ 2481  git commit -am "alteracoes no modelo de contract info, para suportar a opcao de multiempresas"
+ 2482  git push origin task/pk-4189-cadastro-multi-empresas
+ 2483  git checkout -
+ 2486  git checkout -b task/pk-4189-correcao-testes-cadastro-multi-empresas
+ 2491  git status
+ 2492  git checkout src/main/java/br/com/adtsys/ciee/company/contract/model/ContractInfo.java
+ 2493  git status
+ 2494  git checkout src/main/java/br/com/adtsys/ciee/company/contract/model/CompanyContractInfo.java
+ 2495  git checkout src/main/java/br/com/adtsys/ciee/company/contract/model/MultiCompanyContractInfo.java
+ 2496  git status
+ 2497  git add .
+ 2498  git commit -am "correcoes teste"
+ 2499  git push origin task/pk-4189-correcao-testes-cadastro-multi-empresas
+ 2500  git checkout -
+ 2503  git status
+ 2504  git checkout src/main/java/br/com/adtsys/ciee/company/contract/model/MultiCompanyContractInfo.java
+ 2505  git checkout src/main/java/br/com/adtsys/ciee/company/contract/model/Contract.java
+ 2506  git status
+ 2507  git diff
+ 2508  git stash 
+ 2509  git checkout develop
+ 2510  git pull origin develop
+ 2511  git status
+ 2512  git checkout .
+ 2513  git checkout story/pk-2723-cadastrar-multi-empresas
+ 2514  git stash pop
+ 2515  git status
+ 2516  git checkout .
+ 2517  git status
+ 2518  git reset HEAD src/main/java/br/com/adtsys/ciee/company/CieeServiceCompanyApplication.java
+ 2519  git checkout .
+ 2520  git status
+ 2521  git checkout story/pk-2723-cadastrar-multi-empresas
+ 2522  git stash pop
+ 2524  git status
+ 2525  git checkout src/integration-test/resources/features/contract_payment_history_service_create_api.feature
+ 2526  git checkout src/main/java/br/com/adtsys/ciee/company/CieeServiceCompanyApplication.java
+ 2527  git status
+ 2530  git status
+ 2531  git checkout src/main/java/br/com/adtsys/ciee/company/contract/model/CompanyContractInfo.java
+ 2534  git status
+ 2535  git checkout src/integration-test/java/br/com/adtsys/ciee/company/config/IntegrationTests.java
+ 2536  git status
+ 2537  git stash
+ 2538  git checkout -b task/pk-2723-ajuste-testes
+ 2539  git stash pop
+ 2540  git add .
+ 2541  git commit -am "ajustes em testes"
+ 2542  git push origin task/pk-2723-ajuste-testes
+ 2543  git checkout -
+ 2550  git status
+ 2552  git status
+ 2553  git commit -am "continuacao modelagem"
+ 2554  git push origin story/pk-2723-cadastrar-multi-empresas
+ 2555  git status
+ 2557  git status
+ 2558  git commit -am "correcoes testes/modelagem"
+ 2559  git push origin story/pk-2723-cadastrar-multi-empresas
+ 2562  git status
+ 2565  git sttaus
+ 2566  git status
+ 2570  git status
+ 2571  git stash
+ 2573  git stash pop
+ 2574  git staus
+ 2576  git status
+ 2578  git status
+ 2579  git rm src/main/java/br/com/adtsys/ciee/company/contract/multicompany/controller/MultiCompanyService.java
+ 2580  git status
+ 2581  git add .
+ 2582  git status
+ 2583  git commit -am "finalizando criacao"
+ 2584  git status
+ 2585  git push origin story/pk-2723-cadastrar-multi-empresas
+ 2586  git status
+ 2599  git status
+ 2600  git add .
+ 2601  git commit -am "testes dev"
+ 2602  git push origin story/pk-2723-cadastrar-multi-empresas
+ 2603  git status
+ 2604  git stash
+ 2605  git status
+ 2607  git checkout -b task/pk-2723-ajustes-cadastro-multiempresa
+ 2608  git stash pop
+ 2609  git status
+ 2610  git add .
+ 2611  git status
+ 2612  git commit -am "ajustes em nomes de atributos, que foram alterados e ou excluidos no backend"
+ 2613  git push origin task/pk-2723-ajustes-cadastro-multiempresa
+ 2614  git status
+ 2615  git commit -am "ajustes nome do tipo empresa"
+ 2616  git push origin task/pk-2723-ajustes-cadastro-multiempresa
+ 2617  git pull origin develop
+ 2618  git status
+ 2619  git checkout  src/app/admin/company-contract/company-contract-complete/company-contract-complete.complement.ts
+ 2620  git status
+ 2621  git checkout src/app/admin/company-contract/company-contract-edit/complementary-data-and-address/complementary-data-and-address.component.ts
+ 2622  git status
+ 2623  git checkout -
+ 2625  git checkout task/pk-2723-ajustes-cadastro-multiempresa
+ 2626  git rebase develop task/pk-2723-ajustes-cadastro-multiempresa
+ 2627  git status
+ 2628  git commit -am "ajustes nomes"
+ 2629  git push origin task/pk-2723-ajustes-cadastro-multiempresa
+ 2630  git stauts
+ 2631  git status
+ 2632  git pull origin task/pk-2723-ajustes-cadastro-multiempresa
+ 2633  git status
+ 2634  git push origin task/pk-2723-ajustes-cadastro-multiempresa
+ 2635  git status
+ 2636  git commit -am "ajustes nos atributos"
+ 2637  git push origin task/pk-2723-ajustes-cadastro-multiempresa
+ 2647  git status
+ 2649  git status
+ 2650  git add
+ 2651  git commit -am "ajustes na serializacao dos campos"
+ 2652  git push origin task/pk-2723-ajustes-cadastro-multiempresa
+ 2659  git status
+ 2660  git stash
+ 2662  git status
+ 2663  git stash
+ 2664  git pull origin develop
+ 2665  git stash pop
+ 2666  git status
+ 2674  git status
+ 2677  git status
+ 2678  git push origin task/pk-2723-ajustes-cadastro-multiempresa
+ 2680  git status
+ 2681  git add .
+ 2682  git commit -am "alteracoes de atributos"
+ 2683  git push origin task/pk-2723-ajustes-cadastro-multiempresa
+ 2687  git checkout develop lop
+ 2688  git checkout develop
+ 2690  git stash
+ 2692  git status
+ 2694  git checkout -b task/pk-330-erro-cadastro-multi-empresa
+ 2695  git stash pop
+ 2696  git stattus
+ 2697  git status
+ 2698  git add .
+ 2699  git commit -am "correcao na validacao de dados complementares"
+ 2700  git push origin task/pk-330-erro-cadastro-multi-empresa
+ 2701  git status
+ 2702  git pull origin develop
+ 2703  git stash
+ 2704  git pull origin develop
+ 2705  git stash pop
+ 2706  git commit -am "ajustes"
+ 2707  git push origin task/pk-330-erro-cadastro-multi-empresa
+ 2708  git checkout -
+ 2718  git status
+ 2719  git checkout src/main/java/br/com/adtsys/ciee/company/contract/repository/CompanyContractInfoRepository.java
+ 2720  git status
+ 2723  git status
+ 2724  git stash
+ 2726  git stash pop
+ 2727  git stash
+ 2729  git stash pop
+ 2734  git status
+ 2739  git status
+ 2741  git status
+ 2743  git status
+ 2745  git status
+ 2747  git status
+ 2748  git stash
+ 2749  git pull origin develop
+ 2750  git stash pop
+ 2751  git status
+ 2753  git status
+ 2754  git add .
+ 2755  git status
+ 2756  git reset .
+ 2757  git status
+ 2758  git checkout -b fix/kairos-335-correcao
+ 2759  git add .
+ 2760  git status
+ 2761  git add .
+ 2763  git status
+ 2764  git stash
+ 2765  git pull origin develop
+ 2766  git stash pop
+ 2767  git status
+ 2768  git checkout -b fix/kairos-336-correcao-AttributeUtils
+ 2769  git add .
+ 2770  git commit -am 'Correção para que AttributeUtils busque nas super classes os atributos a serem verificados'
+ 2771  git status
+ 2772  git pull origin fix/kairos-336-correcao-AttributeUtils
+ 2773  git push origin fix/kairos-336-correcao-AttributeUtils
+ 2774  git checkout -
+ 2775  git pull origin develop
+ 2779  git status
+ 2781  git status
+ 2782  git add .
+ 2783  git commit -am 'Correção'
+ 2784  git push origin fix/kairos-335-correcao
+ 2785  git checkout -
+ 2794  git checkout stable/r3s1
+ 2795  git checkout stable/r3s18
+ 2796  git checkout develop
+ 2799  git status
+ 2801  git checkout -
+ 2836  git status
+ 2837  git checkout src/main/java/br/com/adtsys/ciee/company/config/AppConfig.java
+ 2838  git status
+ 2843  git status
+ 2849  git status
+ 2889  git status
+ 2890  git checkout 
+ 2892  git staus
+ 2893  git status
+ 2894  git checkout 
+ 2895  git status
+ 2896  git checkout src/main/java/br/com/adtsys/ciee/company/blockingreason/service/BlockingReasonService.java
+ 2897  git checkout src/main/java/br/com/adtsys/ciee/company/legacy/service/BlockingReasonLegacyService.java
+ 2898  git status
+ 2899  git stash
+ 2901  git stash pop
+ 2902  git status
+ 2916  git branch
+ 2917  git checkout task/pk-4189-cadastro-multi-empresas
+ 2918  git status
+ 2919  git stash
+ 2920  git checkout task/pk-4189-cadastro-multi-empresas
+ 2921  git stash pop
+ 2922  git status
+ 2925  git stash
+ 2926  git checkout develop
+ 2927  git status
+ 2929  git stash pop
+ 2931  git status
+ 2952  git status
+ 2953  git add .
+ 2954  git commit -am "fila do legado - inicial"
+ 2955  git status
+ 2956  git push origin task/fila-legado
+ 2957  git status
+ 2981  git status
+ 2982  git checkout src/main/java/br/com/adtsys/ciee/student/config/AppConfig.java
+ 2983  git status
+ 2985  git checkout -b task/fila-estudante-legado
+ 2986  git status
+ 2999  git status
+ 3001  git status
+ 3002  git stash
+ 3004  git stash pop
+ 3008  git checkout develop
+ 3009  git status
+ 3010  git checkout pom.xml
+ 3011  git checkout src/main/java/br/com/adtsys/ciee/student/student/service/StudentLegacyService.java
+ 3012  git checkout rm src/main/java/br/com/adtsys/ciee/student/legacy/queue/
+ 3013  git status
+ 3017  git status
+ 3023  git fetch
+ 3024  git checkout criando-base-service-legacy
+ 3025  git status
+ 3026  git checkout dev/ciee-service-legacy-dev.yml
+ 3027  git checkout criando-base-service-legacy
+ 3036  git status
+ 3037  git checkout devadtsys/ciee-service-legacy-devadtsys.yml
+ 3038  git checkout develop
+ 3040  git status
+ 3045  git status
+ 3046  git add .
+ 3047  git commit -am "segunda versao - alteracoes"
+ 3048  git push origin task/fila-legado
+ 3049  git status
+ 3050  git commit -am "ajustes configuracoes"
+ 3051  git push origin task/fila-legado
+ 3060  git status
+ 3061  git commit -am "ajustes migration"
+ 3062  git push origin task/fila-legado
+ 3063  git status
+ 3065  git clone git@bitbucket.org:cieedesenv/ciee-service-legacy.git
+ 3078  git status
+ 3079  git stash
+ 3080  git pull origin develop
+ 3081  git stash pop
+ 3082  git status
+ 3091  git status
+ 3092  git commit -am "correcao colunas"
+ 3093  git push origin task/fila-legado
+ 3095  git status
+ 3096  git commit -am "ajustes no endoint e no envio da mensagem"
+ 3097  git push origin task/fila-legado
+ 3098  git status
+ 3099  git pull origin task/fila-legado
+ 3100  git status
+ 3101  git push origin task/fila-legado -f
+ 3103  git status
+ 3106  git status
+ 3107  git stash
+ 3109  git stash pop
+ 3111  git status
+ 3112  git stash
+ 3114  git stash pop
+ 3115  git status
+ 3118  git status
+ 3119  git commit -am "envio de emails"
+ 3120  git push origin task/fila-legado
+ 3121  git status
+ 3123  git status
+ 3126  git status
+ 3129  git status
+ 3134  git checkout 555052a9e8b88c9ce6c2ceeba16817f58a24db07
+ 3135  git status
+ 3136  git checkout
+ 3137  git checkout -
+ 3139  git status
+ 3141  git branch
+ 3142  git branch -D task/fila-estudante-legado
+ 3143  git status
+ 3150  git status
+ 3151  git checkout src/main/java/br/com/adtsys/ciee/legacy/integration/soe/LegacyIntegrationService.java
+ 3152  git status
+ 3156  git status
+ 3157  git stash pom.xml
+ 3158  git checkout pom.xml
+ 3159  git checkout src/main/java/br/com/adtsys/ciee/company/legacy/service/BlockingReasonLegacyService.java
+ 3160  git checkout src/main/java/br/com/adtsys/ciee/company/preregistration/controller/PreRegistrationController.java
+ 3162  git status
+ 3163  git stash
+ 3165  git branch -b fix/pk-3142-gerenciar-empresas
+ 3166  git checkout -b fix/pk-3142-gerenciar-empresas
+ 3167  git stash pop
+ 3169  git status
+ 3176  git status
+ 3180  git status
+ 3181  git checkout develop
+ 3182  git status
+ 3183  git stash
+ 3185  git checkout -
+ 3186  git rebase develop fix/pk-3142-gerenciar-empresas
+ 3187  git stash pop
+ 3188  git push origin fix/pk-3142-gerenciar-empresas -f
+ 3189  git status
+ 3190  git add .
+ 3191  git status
+ 3192  git commit -am "ajustes e relacionamentos apolice e atividade ciee"
+ 3193  git push origin fix/pk-3142-gerenciar-empresas -f
+ 3197  git status
+ 3198  git checkout develop
+ 3199  git fetch && git pull
+ 3200  git status
+ 3202  git stash
+ 3203  git checkout -b fix/kairos-410-situacao-empresa
+ 3204  git stash pop
+ 3205  git commit -am "adicao do campo, e alteracao da view"
+ 3206  git push origin fix/kairos-410-situacao-empresa
+ 3207  git checkout develop
+ 3210  git status
+ 3220  git status
+ 3225  git status
+ 3226  git stash
+ 3228  git checkout -b fix/kairos-410-ajuste-specification
+ 3229  git stash pop
+ 3241  git status
+ 3243  git checkout -
+ 3245  git status
+ 3246  git stash
+ 3248  git checkout fix/kairos-410-ajuste-specification
+ 3249  git stash pop
+ 3250  git commit -am "ajustes no filtro"
+ 3251  git push origin fix/kairos-410-ajuste-specification
+ 3252  git checkout -
+ 3257  git status]
+ 3258  git status
+ 3259  git stash
+ 3260  git checkout -b fix/pk-3142-obrigatoriedade-apolice
+ 3261  git stash pop
+ 3263  git status
+ 3264  git commit -am "retirando obrigatoriedade no patch de apolice"
+ 3265  git push origin fix/pk-3142-obrigatoriedade-apolice
+ 3266  git checkout -
+ 3268  git status
+ 3269  git stash
+ 3271  git status
+ 3275  git stash pop
+ 3276  git stash
+ 3277  git checkout -b fix/kairos-396-situacao-contrato
+ 3278  git stash pop
+ 3279  git status
+ 3283  git status
+ 3288  git status
+ 3290  git status
+ 3291  git stash
+ 3292  git checkout -
+ 3294  git checkout fix/kairos-396-situacao-contrato
+ 3295  git stash pop
+ 3305  git status
+ 3306  git stash
+ 3307  git checkout -
+ 3310  git branch
+ 3311  git checkout fix/kairos-396-situacao-contrato
+ 3312  git rebase develop fix/kairos-396-situacao-contrato
+ 3314  git stash pop
+ 3315  git status
+ 3317  git status
+ 3318  git stash
+ 3319  git checkout -
+ 3321  git checkout fix/kairos-396-situacao-contrato
+ 3322  git stash pop
+ 3323  git commit -am "adicao da coluna e mudanca na query da view"
+ 3324  git push origin fix/kairos-396-situacao-contrato
+ 3325  git checkout -
+ 3327  git status
+ 3328  git stash
+ 3330  git checkout -b fix/kairos-396-migration
+ 3331  git stash pop
+ 3332  git status
+ 3333  git checkout -
+ 3334  git status
+ 3335  git checkout develop
+ 3337  git status
+ 3338  git add .
+ 3339  git commit -am "arquivo migration"
+ 3340  git status
+ 3342  git status
+ 3343  git commit -am "arquivo migration-ajustes"
+ 3344  git status
+ 3345  git checkout develop
+ 3347  git checkout fix/kairos-396-migration
+ 3348  git push origin fix/kairos-396-migration
+ 3349  git checkout develop
+ 3351  git status
+ 3353  git checkout -b fix/kairos-399-filtro-contrato-finalizado
+ 3354  git status
+ 3356  git status
+ 3357  git commit -am "adicionado filtro para trazer apenas contratos finalizados"
+ 3358  git push origin fix/kairos-399-filtro-contrato-finalizado
+ 3359  git checkout develop
+ 3362  git status
+ 3363  git branch
+ 3364  git status
+ 3377  git status
+ 3385  git checkout -b fix/kairos-396-ajuste-payload
+ 3386  git status
+ 3393  git status
+ 3395  git status
+ 3396  git commit -am "adicao de enum no payload da view"
+ 3397  git checkout -
+ 3399  git checkout fix/kairos-396-ajuste-payload
+ 3400  git status
+ 3401  git push origin fix/kairos-396-ajuste-payload
+ 3402  git checkout develop
+ 3404  git status
+ 3407  git status
+ 3409  git checkout -b fix/kairos-396-situacao-contrato
+ 3410  git status
+ 3411  git checkout -b fix/kairos-396-situacao-contrato-ativo
+ 3412  git status
+ 3414  git commit -am "adicao do status ativo na situacao do contrato"
+ 3415  git checkout -
+ 3417  git checkout fix/kairos-396-situacao-contrato-ativo
+ 3418  git push origin fix/kairos-396-situacao-contrato-ativo
+ 3419  git checkout -
+ 3426  git status
+ 3429  git config
+ 3430  git config --global merge.tool meld
+ 3432  git clone git@bitbucket.org:cieedesenv/ciee-service-contract.git
+ 3449  git status
+ 3450  git stash
+ 3452  git stash pop
+ 3453  git status
+ 3454  git checkout -b fix/pk-4624-matriz-resp-nao-imprimir-estagio
+ 3455  git status
+ 3457  git add .
+ 3458  git status
+ 3459  git commit -am "adicao de excecao para nao imprimir matriz de responsabilidade quando o contrato for estagio"
+ 3460  git status
+ 3462  git status
+ 3463  git checkout .project
+ 3464  git status
+ 3465  git rm .project
+ 3473  git push origin fix/pk-4624-matriz-resp-nao-imprimir-estagio
+ 3482  git status
+ 3483  git checkout dev-deploy.yml
+ 3485  git status
+ 3486  git checkout -
+ 3488  git checkout fix/pk-4624-matriz-resp-nao-imprimir-estagio
+ 3489  git rebase develop fix/pk-4624-matriz-resp-nao-imprimir-estagio
+ 3490  git status
+ 3492  git push origin fix/pk-4624-matriz-resp-nao-imprimir-estagio
+ 3493  git push origin fix/pk-4624-matriz-resp-nao-imprimir-estagio -f
+ 3494  git checkout -
+ 3505  git staus
+ 3506  git status
+ 3507  git checkout deploy/qa-server/ansible/dev-deploy.yml
+ 3508  git status
+ 3523  git status
+ 3524  git stash
+ 3526  git stash pop
+ 3534  git status
+ 3535  git stash
+ 3536  git status
+ 3538  git stash pop
+ 3539  git status
+ 3541  git stash
+ 3543  git stash pop
+ 3544  git status
+ 3545  git add .
+ 3546  git status
+ 3547  git stash
+ 3548  git status
+ 3550  git checkout -b fix/PK-4534-correcoes-estagio-privado-centralizado-nacional
+ 3551  git stash pop
+ 3552  git status
+ 3553  git push origin fix/PK-4534-correcoes-estagio-privado-centralizado-nacional
+ 3554  git status
+ 3555  git add .
+ 3556  git status
+ 3557  git commit -am "ajustes e correcoes no template"
+ 3558  git push origin fix/PK-4534-correcoes-estagio-privado-centralizado-nacional
+ 3565  git status
+ 3566  git commit -am "ajuste no logotipo"
+ 3567  git status
+ 3568  git push origin fix/PK-4534-correcoes-estagio-privado-centralizado-nacional
+ 3571  git status
+ 3573  git status
+ 3575  git status
+ 3576  git stash
+ 3578  git checkout -b fix/PK-4534-adicao-formatador-dinheiro-real
+ 3579  git stash pop
+ 3580  git commit -am "adicao de formatador de dinheiro em real"
+ 3581  git push origin fix/PK-4534-adicao-formatador-dinheiro-real
+ 3582  git checkout -
+ 3585  git status
+ 3586  git commit -am "adicao de formatador em real"
+ 3587  git status
+ 3588  git push origin fix/PK-4534-correcoes-estagio-privado-centralizado-nacional
+ 3589  git checkout -
+ 3600  git status
+ 3602  git status
+ 3604  git status
+ 3606  git checkout -b fix/pk-4456-correcoes-estagio-privado-centralizado-local
+ 3607  git status
+ 3609  git status
+ 3612  git status
+ 3617  git status
+ 3619  git status
+ 3621  git status
+ 3622  git commit -am "ajustes e correcoes"
+ 3623  git checkout -
+ 3625  git checkout fix/pk-4456-correcoes-estagio-privado-centralizado-local
+ 3626  git rebase develop fix/pk-4456-correcoes-estagio-privado-centralizado-local
+ 3627  git status
+ 3628  git push origin fix/pk-4456-correcoes-estagio-privado-centralizado-local
+ 3629  git checkout -
+ 3641  git status
+ 3653  git status
+ 3654  git checkout -b fix/pk-4456-ajuste-formato-cnpj
+ 3655  git status
+ 3656  git commit -am "ajuste no formato padrao de cnpj"
+ 3657  git push origin fix/pk-4456-ajuste-formato-cnpj
+ 3658  git checkout -
+ 3662  git status
+ 3665  git checkout -b fix/pk-4456-ajuste-formatacao-cnpj
+ 3666  git status
+ 3668  git checkout -b fix/pk-4456-ajustes-formatacao-cnpj-espaco-comarca
+ 3669  git status
+ 3670  git commit -am "alteracao versao utils"
+ 3671  git push origin fix/pk-4456-ajuste-formatacao-cnpj
+ 3672  git checkout -
+ 3674  git status
+ 3676  git status
+ 3677  git commit -am "ajustes espaços no template"
+ 3678  git push origin fix/pk-4456-ajustes-formatacao-cnpj-espaco-comarca
+ 3679  git checkout -
+ 3681  git branch
+ 3724  git init
+ 3725  git add README.md
+ 3726  git add ngnix.txt
+ 3727  git commit -sm "ngnix"
+ 3728  git remote add origin https://github.com/renatogsi/adtsys.git
+ 3729  git push -u origin master
+ 3731  history | grep -i git
