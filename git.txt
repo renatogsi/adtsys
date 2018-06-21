@@ -45,183 +45,210 @@ Adding Files to a Project
 
 # git status
 
+# git rm <file>
+
+# git rm -f <file>  # remove from staged and directory
+
 
 
 The Status of Your Project
 
+view the stateof your staged and upstaged files
+
+# git status
+
+view the output shortened format
+
+# git status -s
+
+get more verbose output, including what was change in a file
+
+# git status -v
 
 
 
 Committing to Git
 
+Opens text editor to prepare for a commit of files in the staging area
+
+# git commit
+
+Bypass the editor and performs a commit with the specified message
+
+# git commit -m "commit message"
+
+Commit a modified file in the staging area
+
+# git commit -a -m "message"
+
+Remove file from stated area
+
+# git rm --cached <file>
 
 
 
 Ignoring Certain File Types
 
 
+Original file that contains file patterns that git will not track
 
+# .git/info/exclude
 
-QUIZ: The Basics of Using Git
+Ignore file local to a git repository commonly used to exclude files based on patterns
 
+# .gitignore
 
+Used to debug git ignore to see what is and is not being excluded from git
 
-
-Installing Git and Configuring it for Local Repositories
-
-
-
-
-Creating Local Repositories with Git and Adding/Checking in FIles
-
+# git check-ignore <pattern>
 
 
 
 Using Tags
 
+Create an annotated tag
 
+# git tag -a <tag name> -m <message>
+
+
+View all tags for the repository
+
+# git tag 
+
+
+Create a lightweight tag
+
+# git tag <tag name> -m <message>
+
+
+Delete a specific tag
+
+# git tag -d <tag name>
 
 
 Using Branches
 
+Creates a new branch of the project tree
+
+# git branch <branch name>
+
+Swithces to another branch
+
+# git checkout <branch name>
+
+Pointer to the current branch being worked on, can use git log and git status
+to view which branch HEAD is pointing to
+
+# HEAD
 
 
 
 Merging Branches
 
+Combines the lastest commits from two branches into one branch
+
+# git merge
+
+Deletes specified branch
+
+# git branch -d <branch>
 
 
 
 Rebasing
 
+Replay changesmade to one branch over the top of another branc
 
+# git rebase <branch>
 
 
 Reverting a Commit
 
+Revert a commit in the project
 
+# git revert <commit>
+# git revert HEAD~9
 
-
+# git log
 
 
 Using the 'diff' Command
 
+View the differences between two commits, files, blobs, ore between
+the networking tree and the staging area
 
+# git diff
 
+# git log --oneline
+
+# git diff <first HEAD> <last HEAD>
+
+# git diff --summary <first HEAD> <last HEAD>
 
 
 
 How Garbage Collection Works
 
+The git garbagecollection command,cleans out old objects tha can not be
+referenced by the database anymore, and compresses contents within the 
+.git directory to save disk space.
+
+# git gc --auto
+
+# git gc
+
+Prune repository every 30 days
+
+# git config gc.prumeexpire"30 days"
 
 
+By default, cleans out objects that are older than two weeks
 
-
-
-QUIZ: Tags, Branching, Merging and Reverting Using Git Source Control
-
-
-
-
+# git gc --prune
 
 
 
 Git's Logs and Auditing
 
+View the git repository history
 
+# git log
 
+Show a textual graph of a projects commit history
 
+# git log --graph
 
-Using Git's Logs
+Show statisticsof the files with each commit
 
+# git log --stat
 
+Format the output of a git log command to display specific fields
 
+# git log --pretty=format:"%h - %an - %ar - %s"
 
+Show logs DAYS ago
 
+# git log --since="4 days ago"
 
-QUIZ: Git Logging and Auditing
+Show logs with word "build"
 
-
-
-
-
-
-Cloning Repositories
-
-
+# git log -S build
 
 
 
 Cloning Local Repositories
 
-
-
-
+# git clone <local repo> <new repo>
 
 
 Cloning Remote Repositories over HTTPS
 
-
-
-
-
-
-
-Forking
-
-
-
-
-
-
-QUIZ: Cloning Git Repositories
-
-
-
-
-
-
-
-Securing Your GitHub Account with SSH Keys
-
-
-
-
-
-
-
-Cloning a Remote GitHub Repository
-
-
-
-
-
-
-
-
-
-Tracking Remote Repositories
-
-
-
-
-
-
-Pushing to Remote Repositories
-
-
-
+# git clone <remote repo>
 
 
 
 Pull Requests
 
-
-
-
-
-
-QUIZ: Push, Pull and Track Remote Git Repositories
 
 
 

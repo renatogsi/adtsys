@@ -1,12 +1,12 @@
 
-ngnix centos:
+nginx centos:
 
-/etc/ngnix
+/etc/nginx
 
 
-ngnix.conf
+nginx.conf
 
-include /etc/ngnix/vhost.d/*.conf;
+include /etc/nginx/vhost.d/*.conf;
 
 mkdir vhost.d
 cd vhost.d
@@ -25,7 +25,7 @@ root /var/www/html # padrao virtuais
 
 mkdir -p /var/www/html
 
-# ngnix -t -  testar configuração
+# nginx -t -  testar configuração
 
 
 Create VHOST
