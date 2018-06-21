@@ -3,19 +3,23 @@ Installation and Basic Setup
 tomcat.apache.org
 java.com
 
-gunzip jdk*.gz
+tar -zxvf jdk*.gz
+tar -zxvf jre*.gz
 
 mv jdk* /opt
-sudo alternative --install /usr/bin/java java /opt/jdk*/bin/java 2
-sudo alternative --config java
+
+mv jre* /opt/jdk*/jre
+
+sudo update-alternatives --install /usr/bin/java java /opt/jdk*/bin/java 2
+sudo update-alternatives --config java
 
 java --version
 
-sudo alternative --install /usr/bin/jar jar /opt/jdk*/bin/jar 2
-sudo alternative --install /usr/bin/javac javac /opt/jdk*/bin/javac 2
+sudo update-alternatives --install /usr/bin/jar jar /opt/jdk*/bin/jar 2
+sudo update-alternatives--install /usr/bin/javac javac /opt/jdk*/bin/javac 2
 
-sudo alternative --set jar /opt/jdk*/bin/jar
-sudo alternative --set javac /opt/jdk*/bin/javac
+sudo update-alternatives --set jar /opt/jdk*/bin/jar
+sudo update-alternatives --set javac /opt/jdk*/bin/javac
 
 
 export JAVA_HOME=/opt/jdk*/
@@ -133,15 +137,20 @@ tomcat-users.xml
 
 
 
-Understanding Architecture and Configuration
-
-
-
-
 
 Deploy Applications on Tomcat
 
 
+automatic deploy
+
+cp <war file> /opt/apache-tomcat*/webapps
+
+
+Manually deploy
+
+cd /opt/apache-tomcat*/webapps
+mkdir <app>
+jar xvf <war file>
 
 
 
@@ -149,11 +158,64 @@ Deploy Applications on Tomcat
 Managing Tomcat Applications
 
 
+http://<server>:8080
 
+>> "Server Status"
+
+
+
+Installation tomcat-manager
+
+https://github.com/tomcatmanager/tomcatmanager
+
+
+You'll need Python >= 3.4. Install using pip:
+
+$ pip install tomcatmanager
+
+
+START/STOP APP:
+
+tomcat-manager start/stop /opt/apache-tomcat*/webapp/<app>
+
+
+DEPLOY/UNDEPLOY APP:
+
+tomcat-manager deploy/undeploy /opt/apache-tomcat*/webapp/<app>
+
+
+EXPIRE SESSIONS:
+
+tomcat-manager expire /opt/apache-tomcat*/webapp/<app> <MINUTES>
+
+
+LIST INSTALLED WEB APPLICATIONS:
+
+tomcat-manager list 
 
 
 
 Tuning Tomcat for Performance
+
+
+cd /opt/tomcat-apache*/bin
+
+vi setenv.sh
+
+#!/bin/sh
+
+# Xms - Minimum memory
+# Xmx - Max memory
+# XX:PermSize - Minimum permanent memory
+# XX:MaxPermSize - Maximum permanent memory
+
+
+JAVA_OPTS="-Xms64m -Xmx256m -XX:PermSize=16m -XX:MaxPermSize=64m -Dfile.encodi
+ng=utf-8" 
+
+JAVA_OPTS="$JAVA_OPTS -XX:+UserConcMarkSweepGC"
+
+CATALINA_PID=/opt/apache-tomcat*/catalina.pid
 
 
 
