@@ -19,4 +19,7 @@ for path in glob.iglob('./new/receipt-[0-9]*.json'):
     print(f"moved '{path}' to '{destination}'")
 
 print(f"Receipt subtotal: ${subtotal}")
+print(f"Receipt subtotal: ${math.ceil(subtotal)}")
+print(f"Receipt subtotal: ${math.floor(subtotal)}")
+print(f"Receipt subtotal: ${round(subtotal, 2)}")
 
