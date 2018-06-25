@@ -1,0 +1,58 @@
+create database:
+
+show database;
+
+create database <nome>;
+
+drop database <nome>;
+
+
+create table:
+
+create table <nome> (campo varchar());
+
+drop table <nome>;
+
+show tables;
+
+show fields from <table name>;
+
+
+
+create table <nome>(<name> varchar() PRIMARY KEY,campo varchar());
+
+
+Secure MYSQL SETUP:
+
+# mysql_secure_installation
+
+insert into <table> (campo1, campo2) values (val1, val2);
+
+
+insert into table1 select * from table2;
+
+
+create index <name> on <table>  <colunm);
+
+
+alter table <name> drop INDEX <index name>;
+
+
+create table <nome>(field int PRIMARY KEY AUTO_INCREMENT,field2 varchar());
+
+
+create view <name> as select count(*),avg(col2),sum(col2) from <table>;
+
+drop view <name>;
+
+select lcase(col1), UCASE(col2) from table;
+
+
+grant all on dbTest.* to 'testuser'@'localhost' identified by 'password';
+
+
+ALTER TABLE tblAcctExec ADD COLUMN execPhoneNumber INT NOT NULL;
+
+
+
+
