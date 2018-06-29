@@ -1,0 +1,24 @@
+
+
+       Ctrl+Shift+O
+              Split terminals Horizontally.
+
+       Ctrl+Shift+E
+              Split terminals Vertically.
+
+       Ctrl+Shift+T
+              Open new tab.
+
+       Ctrl+Shift+I
+              Open a new window. (Note: Unlike in previous releases, this window is part of the same Terminator process.)
+
+       Super+I
+              Spawn a new Terminator process.
+
+       Alt+L  Open layout launcher.
+
+       Ctrl+Shift+W
+              Close the current terminal.
+
+       Ctrl+Shift+Q
+
